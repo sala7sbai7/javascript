@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="date">Wednesday, September 4, 2024</div>
+            <div class="subscription">
+                <button class="subscribe-btn">Subscribe</button>
+                <button class="login-btn">Log In</button>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>The New York Times</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">U.S.</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            
+            <!-- News Section (Left) -->
+            <section class="news-section">
+                <article>
+                    <div class="text-content">
+                        <h2>Scenes of Carnage After Russian Attack on Ukrainian Military Academy</h2>
+                        <p>The devastation of Tuesday's attack was shocking even to Ukrainians who had witnessed many such scenes.</p>
+                        <p>4 MIN READ</p>
+                    </div>
+                    <div class="image-content">
+                        <img class="img1" src="./img/03HP-ukraine-threeByTwoMediumAt2X.webp" alt="Ukraine Military Attack">
+                    </div>
+                </article>
+
+                <article class="highlighted">
+                    <div class="text-content">
+                        <h3>BREAKING</h3>
+                        <h2>Ukraine’s Foreign Minister Offers to Resign as Zelensky Plans Major Shake-Up</h2>
+                        <p>President Volodymyr Zelensky is expected to make major changes to his government.</p>
+                        <p>1 MIN READ</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="./04ukraine-blog-cabinet-dimissals-hzgp-superJumbo.webp" alt="Breaking News">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="text-content">
+                        <h2>Attacks killed at least seven people in western Ukraine amid wide bombardment.</h2>
+                        <p>2 MIN READ</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="attack-image.jpg" alt="Attack">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sidebar Section (Right) -->
+<aside class="sidebar-section">
+    <!-- Large Article on Top -->
+    <article class="featured-article">
+        <img src="./WELL-FLU-SHOT-TIMING1-wphz-superJumbo.webp" alt="Flu Shot" class="featured-image">
+        <h2>The Best Time to Get a Flu Shot</h2>
+        <p>This year’s vaccines protect against several different flu viruses. Experts have advice about when to get one for full-season protection.</p>
+        <p class="read-time">3 MIN READ</p>
+    </article>
+
+    <hr>
+
+    <!-- Smaller Articles Below -->
+    <div class="small-articles">
+        <article>
+            <img src="./03venice-queer-hwmg-superJumbo.webp" alt="Daniel Craig" class="small-image">
+            <h3>Daniel Craig got explicit (and romantic) in Luca Guadagnino’s latest film.</h3>
+        </article>
+
+        <article>
+            <img src="./23small-rotterdam-portrait-tjcz-superJumbo.webp" alt="Small Apartment" class="small-image">
+            <h3>Two architects in the Netherlands made the most of an apartment that’s only 74 square meters.</h3>
+        </article>
+    </div>
+</aside>
+        </div>
+    </main>
+
+</body>
+</html>

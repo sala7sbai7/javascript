@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Main Layout: Left and Right Section */
+.main-content {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Left Section (News Section) - 70% Width */
+.main-content .news-section {
+    flex: 0 0 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Inside News Section: Text and Image Layout */
+.main-content .news-section article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Text Content - 40% Width of News Section */
+.main-content .news-section .text-content {
+    flex: 0 0 40%;
+}
+
+/* Image Content - Takes Remaining 60% Width */
+.main-content .news-section .image-content {
+    flex: 0 0 60%;
+}
+
+.main-content .news-section .image-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sidebar Section */
+.sidebar-section {
+    width: 100%; /* Full width of the sidebar */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Article on Top */
+.featured-article {
+    margin-bottom: 20px;
+}
+
+.featured-image {
+    width: 100%;  /* Full width image */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.featured-article h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-article p {
+    font-size: 16px;
+    color: #555;
+}
+
+.featured-article .read-time {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Divider between featured and smaller articles */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Smaller Articles */
+.small-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.small-articles article {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.small-image {
+    width: 80px;  /* Smaller image size */
+    height: auto;
+    border-radius: 4px;
+}
+
+.small-articles h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Highlighted News Style */
+.highlighted {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-left: 4px solid red;
+}
+
+.highlighted h3 {
+    color: red;
+}
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}

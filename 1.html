@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+
+    <!-- First Navbar -->
+    <nav class="navbar">
+        <a href="https://www.amazon.com" class="logo">
+            <img src="./Screenshot 2024-09-05 at 17.00.03.png" alt="Amazon Logo">
+        </a>
+
+        <div class="deliver-to">
+            <span>Deliver to</span>
+            <span><strong>Israel</strong></span>
+        </div>
+
+        <div class="search-bar">
+            <select name="categories" id="category-selector">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="books">Books</option>
+                <option value="fashion">Fashion</option>
+                <option value="toys">Toys & Games</option>
+            </select>
+            <input type="text" placeholder="gaming headsets" id="search-input">
+            <button id="search-btn">
+                <img src="https://img.icons8.com/material-outlined/24/000000/search.png" alt="Search Icon">
+            </button>
+        </div>
+
+        <div class="language-options">
+            <select name="language" id="language-selector">
+                <option value="EN">EN</option>
+            </select>
+        </div>
+
+        <div class="account">
+            <span>Hello, Sign in</span>
+            <a href="#">Account & Lists</a>
+        </div>
+
+        <div class="returns-orders">
+            <a href="#">Returns & Orders</a>
+        </div>
+
+        <div class="cart">
+            <a href="#">
+                <img src="./Screenshot 2024-09-05 at 17.30.47.png" alt="Cart Icon">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <nav class="second-navbar">
+        <a href="#" class="menu-icon">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="Menu Icon">
+        </a>
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </nav>
+
+    <!-- Content Wrapper: Gallery, Product Info, and Sidebar -->
+    <div class="content-wrapper">
+        <!-- Left-Side Vertical Gallery Section -->
+        <div class="gallery-section">
+            <div class="thumbnail-list">
+                <img src="./03HP-ukraine-threeByTwoMediummmAt2X.jpg" class="thumbnail" alt="Thumbnail 1">
+                <img src="./61G0G1KDBEL._AC_SX679_.jpg" class="thumbnail" alt="Thumbnail 2">
+                <img src="./61jtmLo8j4L._AC_SX679_.jpg" class="thumbnail" alt="Thumbnail 3">
+                <img src="./61jvsGQOa4L._AC_SX679_.jpg" class="thumbnail" alt="Thumbnail 4">
+                <img src="./61NKG3MNgJL._AC_SX679_.jpg" class="thumbnail" alt="Thumbnail 5">
+            </div>
+            <div class="main-image-display">
+                <img src="./03HP-ukraine-threeByTwoMediummmAt2X.jpg" class="main-image" alt="Main Image Display">
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-info-section">
+            <h2>Cat Ear Gaming Headphones Wired AUX 3.5mm LED Light, Noise Canceling Game Headphones</h2>
+            <p>With Microphone for PC, PS4, PS5, Xbox, Mobile, Switch</p>
+            <a href="#" class="store-link">Visit the VIGROS Store</a>
+            
+            <div class="ratings">
+                <span>3.9</span>
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" alt="Star Rating">
+                <span>(1,283 ratings)</span>
+            </div>
+            
+            <p class="price">$29.99</p>
+            <p class="shipping">FREE International Returns</p>
+            <p>No Import Fees Deposit & $10.63 Shipping to Israel <a href="#">Details</a></p>
+            
+            <div class="product-options">
+                <img src="./thumb1.png" alt="Option 1" class="product-option">
+                <img src="./thumb2.png" alt="Option 2" class="product-option">
+                <img src="./thumb3.png" alt="Option 3" class="product-option">
+                <img src="./thumb4.png" alt="Option 4" class="product-option">
+            </div>
+        </div>
+
+        <!-- Sidebar Section (Last 20%) -->
+        <div class="sidebar-section">
+            <h3>$29.99</h3>
+            <p>FREE International Returns</p>
+            <p>No Import Fees Deposit & $10.63 Shipping to Israel</p>
+            <p>FREE delivery Thursday, September 26 to Israel</p>
+            <p>Or fastest delivery Thursday, September 12</p>
+            <p>In Stock</p>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Image Switching -->
+    <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.main-image');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function () {
+                mainImage.src = this.src;  // Update main image to clicked thumbnail's source
+            });
+        });
+    </script>
+
+</body>
+</html>

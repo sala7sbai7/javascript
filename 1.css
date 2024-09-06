@@ -1,0 +1,343 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* First Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: white;
+    height: 60px;
+}
+
+/* Amazon Logo */
+.logo img {
+    width: 100px;  
+}
+
+/* Deliver To Section */
+.deliver-to {
+    color: white;
+    font-size: 14px;
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+#category-selector {
+    padding: 10px;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    background-color: #febd69;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Language Selector */
+.language-options {
+    padding-right: 20px;
+}
+
+#language-selector {
+    padding: 5px;
+    background-color: #f3f3f3;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+/* Account Section */
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.account a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.account a:hover {
+    text-decoration: underline;
+    color: #febd69; 
+}
+
+/* Returns & Orders */
+.returns-orders {
+    margin-right: 20px;
+}
+
+.returns-orders a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.returns-orders a:hover {
+    text-decoration: underline;
+    color: #febd69; 
+}
+
+/* Cart Section */
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart a:hover {
+    text-decoration: underline;
+    color: #febd69; 
+}
+
+/* Second Navbar Styles */
+.second-navbar {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.second-navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.second-navbar a:hover {
+    text-decoration: underline;
+    color: #febd69;
+}
+
+/* Product Info Section */
+.product-info-section {
+    width: 40%;  /* Occupies 40% of the width */
+    padding-left: 20px;
+}
+
+.product-info-section h2 {
+    font-size: 28px;  /* Increased from 22px */
+    font-weight: bold;
+}
+
+.product-info-section p {
+    font-size: 22px;  /* Increased from 18px */
+    color: #333;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.ratings span {
+    font-size: 22px;  /* Increased size for the rating numbers */
+}
+
+.price {
+    font-size: 32px;  /* Increased from 26px */
+    color: #b12704;
+    margin: 10px 0;
+}
+
+.shipping {
+    font-size: 22px;  /* Increased size for shipping and details text */
+    color: #565959;
+}
+
+.product-options {
+    display: flex;
+    margin-top: 15px;
+}
+
+.product-option {
+    width: 70px;  /* Increased width */
+    height: 70px;  /* Increased height */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    flex-direction: row; /* Align thumbnails and main image side by side */
+    width: 40%;  /* Occupies 40% of the width */
+    padding-right: 20px;
+}
+
+.thumbnail-list {
+    display: flex;
+    flex-direction: column; /* Keep thumbnails in a vertical column */
+    margin-right: 20px; /* Space between thumbnails and main image */
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #febd69;
+}
+
+.main-image-display {
+    flex-grow: 1;
+}
+
+.main-image {
+    width: 450px;  /* Increased width of the main image */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Product Info Section */
+.product-info-section {
+    width: 40%;  /* Occupies 40% of the width */
+    padding-left: 20px;
+}
+
+.product-info-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 24px;
+    color: #b12704;
+    margin: 10px 0;
+}
+
+.shipping {
+    font-size: 14px;
+    color: #565959;
+}
+
+.product-options {
+    display: flex;
+}
+
+.product-option {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Sidebar Section */
+.sidebar-section {
+    width: 20%; /* Occupies the remaining 20% */
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.sidebar-section h3 {
+    font-size: 24px;
+    color: #b12704;
+}
+
+.sidebar-section p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.quantity-selector {
+    margin: 20px 0;
+}
+
+.quantity-selector label {
+    font-size: 14px;
+}
+
+.quantity-selector select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.add-to-cart, .buy-now {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #f0c14b;
+    color: #111;
+}
+
+.buy-now {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+/* Flex container to align gallery, product info, and sidebar side by side */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
